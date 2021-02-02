@@ -1,0 +1,36 @@
+#queryBox{
+    border-width: 2px;
+    border-style: solid;
+    border-color: black;
+}
+
+#fiveDayDiv {
+    border-width: 2px;
+    border-style: solid;
+    border-color: black;
+}   
+
+.col-2{
+    border-width: 1px;
+    border-style: solid;
+    border-color: black;
+    height: 100%;
+}
+
+#tops{
+    height: 400px;
+}
+
+#bottoms{
+    border-right: 2px;
+    border-style: solid;
+    border-color: black;
+    height: 362px;
+}
+
+#bottom{
+    border-right: 2px;
+    border-style: solid;
+    border-color: black;
+    height: 362px;
+}
