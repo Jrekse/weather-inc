@@ -34,3 +34,16 @@
     border-color: black;
     height: 362px;
 }
+
+.boss{
+    text-align: center;
+}
+
+#uv{
+    text-align: center;
+    font-size: larger;
+}
+
+.today{
+    text-align: center;
+}
