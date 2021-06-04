@@ -15,70 +15,85 @@
             <h4 class="navbar-brand">Weather Inc.</h4>
         </div>
     </nav>
-    <div class="row" id="tops">
-        <div class="col-4" id="queryBox">
+    <div class="container">
+                <div class="row" id="queryBox">
+                    <div class="row">
+                        <input type="search" class="form-control  search " placeholder="...." id="search-input"></input>
+                        <button class="btn btn-outline-primary sbtn" id="searchButton">Search</button>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <ul class="prev-search col-12"></ul>
+                    </div>
+                    <!--weather for current location-->
+                </div>
+          <div id="bottomStuff">     
             <div class="row">
-                <input type="search" class="form-control me-2" placeholder="...." id="search-btn"></input>
-                <button class="btn btn-outline-primary" id="searchButton">Search</button>
+                <div class="col-12" id="fiveDayDiv">
+                    <div class="row" style="height: 100%;">
+                        <div class="col-1"></div>
+                        <div class="col-2" id="fiveDayOne">
+                            <header id="dOneHead"></header>
+                            <hr>
+                            <p id="dOneT"></p>
+                            <p id="dOneH"></p>
+                            <p id="dOneW"></p>
+                        </div>
+                        <div class="col-2" id="fiveDayTwo">
+                            <header id="dTwoHead"></header>
+                            <hr>
+                            <p id="dTwoT"></p>
+                            <p id="dTwoH"></p>
+                            <p id="dTwoW"></p>
+                        </div>
+                        <div class="col-2" id="fiveDayThree">
+                            <header id="dThreeHead"></header>
+                            <hr>
+                            <p id="dThreeT"></p>
+                            <p id="dThreeH"></p>
+                            <p id="dThreeW"></p>
+                        </div>
+                        <div class="col-2" id="fiveDayFour">
+                            <header id="dFourHead"></header>
+                            <hr>
+                            <p id="dFourT"></p>
+                            <p id="dFourH"></p>
+                            <p id="dFourW"></p>
+                        </div>
+                        <div class="col-2" id="fiveDayFive">
+                            <header id="dFiveHead"></header>
+                            <hr>
+                            <p id="dFiveT"></p>
+                            <p id="dFiveH"></p>
+                            <p id="dFiveW"></p>
+                        </div>
+                        <div class="col-1"></div>
+                    </div>
+                </div>
             </div>
-            <div class="row">
-                <ul class="prev-search"></ul>
+        <div class="row">
+            <div class="col-2" id="bottoms">
+                <h4>Current Conditions</h4>
+                <div id="icon"></div>
             </div>
-            <!--weather for current location-->
+            <div class="col-10" id="bottoms">
+                <h3 class="boss" id="city"></h3>
+                <h4 id="dateToday"></h4>
+                <br>
+                <div class="today">
+                    <p id="temp"></p>
+                    <p id="humid"></p>
+                    <p id="wind"></p>
+                    <div id="uvIndex">
+                        <p id="uv"></p>
+                    </div>
+                </div>
+            </div>
+            <button class="btn btn-danger clear">Clear</button>
         </div>
-        <div class="col-8" id="fiveDayDiv">
-            <div class="row" style="height: 100%;">
-                <div class="col-2" id="fiveDayOne">
-                    <header id="dOneHead"></header>
-                    <hr>
-                    <p id="dOneT"></p>
-                    <p id="dOneH"></p>
-                </div>
-                <div class="col-2" id="fiveDayTwo">
-                    <header id="dTwoHead"></header>
-                    <hr>
-                    <p id="dTwoT"></p>
-                    <p id="dTwoH"></p>
-                </div>
-                <div class="col-2" id="fiveDayThree">
-                    <header id="dThreeHead"></header>
-                    <hr>
-                    <p id="dThreeT"></p>
-                    <p id="dThreeH"></p>
-                </div>
-                <div class="col-2" id="fiveDayFour">
-                    <header id="dFourHead"></header>
-                    <hr>
-                    <p id="dFourT"></p>
-                    <p id="dFourH"></p>
-                </div>
-                <div class="col-2" id="fiveDayFive">
-                    <header id="dFiveHead"></header>
-                    <hr>
-                    <p id="dFiveT"></p>
-                    <p id="dFiveH"></p>
-                </div>
-                <button class="col-2 btn btn-outline-danger" id="fiveDayReset">Reset</button>
-            </div>
-        </div>
+    </div> 
     </div>
-    <div class="row">
-        <div class="col-6" id="bottoms">
-            <header class="boss">Today</header>
-            <br>
-            <div class="today">
-                <p id="temp"></p>
-                <p id="humid"></p>
-                <p id="wind"></p>
-            </div>
-        </div>
-        <div class="col-6" id="bottom">
-            <header class="boss">UV Index</header>
-            <br>
-            <br>
-            <p id="uv"></p>
-        </div>
-    </div>
+
     <script src="assets/script.js"></script>
 </body>
 </html>
