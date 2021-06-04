@@ -2,18 +2,6 @@ Weather App
 
 For this application I had to use openweather API to collect a user input (a city), then get the current temperature, humidity, wind speed, and UV index and display this information on the page. Another requirement for this project was to display the five day forcast for the requested city and display these seperatly.
 
-![alt text](images/one.png)
-
-this image is of the page with no input, everything is blank but the layout is clear
-
-![alt text](images/two.png)
-
-this next image shows the user has searched for seattle, all of the required information is shown in it's proper place and the information is labled for clarity
-
-![alt text](images/three.png)
-
-finally the image above shows the functionality of the reset button
-
 
 ----------------------------------------------------------------------------The Meat and Potatoes-------------------------------------------------------------------
 

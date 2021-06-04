@@ -77,7 +77,7 @@ $(document).ready(function(){
         $.ajax({
             type: "GET",
             //uses the open weather api and takes cityInput and apiKey as variables in the querystring
-            url: "http://api.openweathermap.org/data/2.5/weather?q=" + cityInput + "&units=Imperial&appid=" + apiKey,
+            url: "https://api.openweathermap.org/data/2.5/weather?q=" + cityInput + "&units=Imperial&appid=" + apiKey,
             //makes the output of the ajax in json
             dataType: "json",
             //returns data if the ajax is called successfully
